@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us — SportsBooking</title>
+  <meta name="description" content="SportsBooking — book courts, fields and coaches easily. Our mission is to make sports accessible to everyone." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0f62fe;--muted:#6b7280;--bg:#f8fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; background:var(--bg); color:#0f1724}
+    .container{max-width:1100px;margin:48px auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;background:linear-gradient(135deg,var(--accent),#7c3aed);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin-top:6px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:28px}
+    .card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(12,18,31,0.06)}
+
+    .stats{display:flex;gap:12px;margin-top:16px}
+    .stat{flex:1;text-align:center}
+    .stat h3{margin:0;font-size:20px}
+    .stat p{color:var(--muted);margin:6px 0 0}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .feature{padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(15,98,254,0.06)}
+    .feature h4{margin:0 0 8px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+
+    .team{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .member{flex:1 1 160px;background:var(--card);padding:12px;border-radius:10px;text-align:center}
+    .avatar{width:72px;height:72px;border-radius:999px;background:#eef2ff;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+
+    .cta{display:flex;gap:10px;margin-top:18px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:1px solid rgba(15,98,254,0.12);color:var(--accent)}
+
+    footer{margin-top:30px;color:var(--muted);font-size:14px;text-align:center}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+      .brand h1{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SA</div>
+        <div>
+          <h1>Sports Acadamy</h1>
+          <p class="lead">Book courts, fields, coaches and classes in seconds.</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#features" style="margin-right:14px;color:var(--muted);text-decoration:none">Features</a>
+        <a href="#team" style="margin-right:14px;color:var(--muted);text-decoration:none">Team</a>
+        <a href="file:///C:/Users/suraj/Desktop/HTML%20WEB%20PAGE/contact.html" style="color:var(--muted);text-decoration:none">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Our mission</h2>
+        <p style="color:var(--muted);margin-top:8px">We make it effortless for players, coaches and sports organisers to discover and reserve facilities — whether it's a neighbourhood football pitch, a tennis court, or a private coaching session. Our goal is to remove friction so people can play more.</p>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>12k+</h3>
+            <p>Bookings/month</p>
+          </div>
+          <div class="stat">
+            <h3>2.1k</h3>
+            <p>Active venues</p>
+          </div>
+          <div class="stat">
+            <h3>95%</h3>
+            <p>Customer satisfaction</p>
+          </div>
+        </div>
+
+        <div class="features" id="features">
+          <div class="feature">
+            <h4>Instant booking</h4>
+            <p>Reserve a court in under 60 seconds with clear availability and instant confirmation.</p>
+          </div>
+          <div class="feature">
+            <h4>Verified venues</h4>
+            <p>We verify every venue so you can trust the facilities and amenities before you arrive.</p>
+          </div>
+          <div class="feature">
+            <h4>Coach marketplace</h4>
+            <p>Find experienced coaches for private lessons or group sessions across many sports.</p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <button class="btn btn-primary" onclick="window.location.href='file:///C:/Users/suraj/Desktop/HTML%20WEB%20PAGE/contact.html'">Book Now</button>
+          <button class="btn btn-ghost" onclick="window.location.href='#contact'">Get in touch</button>
+        </div>
+      </div>
+
+      <aside class="card" aria-labelledby="why-title">
+        <h3 id="why-title">Why SportsBooking?</h3>
+        <p style="color:var(--muted);margin-top:8px">We combine local knowledge with a simple, reliable booking experience. Our app helps venue owners fill empty time slots and helps players discover the best local options.</p>
+
+        <h4 style="margin-top:14px">Testimonials</h4>
+        <blockquote style="margin:8px 0;color:var(--muted);font-size:14px">“Simple and fast. I booked my weekly futsal slot in seconds.” — Raj, player</blockquote>
+        <blockquote style="margin:8px 0;color:var(--muted);font-size:14px">“My tennis court bookings increased 3x after listing.” — Priya, venue owner</blockquote>
+      </aside>
+    </section>
+
+    <section class="card" id="team" style="margin-top:18px">
+      <h2>Meet the team</h2>
+      <p style="color:var(--muted);margin-top:6px">A small, passionate team of product builders, sports lovers and community organisers.</p>
+
+      <div class="team">
+        <div class="member">
+          <div class="avatar">SG</div>
+          <strong>Suraj Gurme</strong>
+          <p style="color:var(--muted);margin:6px 0 0;font-size:14px">Co-founder & CEO</p>
+        </div>
+        <div class="member">
+          <div class="avatar">RP</div>
+          <strong>Ram Patil</strong>
+          <p style="color:var(--muted);margin:6px 0 0;font-size:14px">Head of Partnerships</p>
+        </div>
+        <div class="member">
+          <div class="avatar">AP</div>
+          <strong>Aditya patil</strong>
+          <p style="color:var(--muted);margin:6px 0 0;font-size:14px">Product Lead</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <footer>
+      © <span id="year"></span> SportsBooking · Built with ❤️ · <a href="#" style="color:var(--muted);text-decoration:none">Privacy</a>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
